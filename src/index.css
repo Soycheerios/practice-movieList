@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+ /* Container for the stars */
+ .stars {
+  display: inline-block;
+  font-size: 0;
+  height: 25px;
+  width: 125px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* Animate the stars when rating changes */
+.stars:hover:after, .stars:hover + .rating:after, .rating:checked + .stars:after {
+  width: 100%;
+}
+
+
+.stars:hover {
+  background-color: gold;
+}
+
+.stars {
+  color: lightgrey;
+}
+
+/*Movie list styles*/
+.pageTitle {
+  text-align: center;
+}
+
+.movie-list {
+  text-align: center;
+}
+
+/* General styles */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: black;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Movie styles */
+.movie {
+  margin-bottom: 50px;
+}
+
+.movie img {
+  display: block;
+  max-width: 30%;
+  margin-bottom: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.movie p {
+  margin-bottom: 30px;
+}
+
+/* Star rating styles */
+
+.star-rating .star {
+  display: inline-block;
+  font-size: 30px;
+  cursor: pointer;
+  color: gray;
+  margin-right: 5px;
+}
+
+.star-rating .filled {
+  color: gold;
+}
+
+/* Review list styles */
+.review-list {
+  margin-top: 20px;
+}
+
+.review-list p {
+  margin-bottom: 5px;
+}
+
+/* Review form styles */
+
+
+.review-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+.review-form input[type="text"],
+.review-form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+
+.review:nth-child(odd) {
+  background-color: whitesmoke;
+}
+
+.review:nth-child(even) {
+  background-color: lightgray;
+}
+
